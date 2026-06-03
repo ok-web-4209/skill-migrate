@@ -1,42 +1,32 @@
 # SkillMigrate
 
-SkillMigrate is a static, content-first website for **study abroad guides, course comparisons, visa pathway explainers, and country planning resources**. The repository now includes the homepage plus standalone guide pages for every linked country, course, comparison, and visa topic.
+SkillMigrate is a static, content-first website for **study abroad guides, course comparisons, visa pathway explainers, and country planning resources**. The repository includes the homepage plus standalone guide pages for every linked country, course, comparison, and visa topic.
 
 ## Tech stack
 
-- Vite
-- HTML
-- Tailwind CSS
+- Static HTML
+- Precompiled Tailwind CSS
 - Vanilla JavaScript
 - Inter font
 
-No React, Next.js, backend, database, authentication, ad scripts, or heavy client-side libraries are included.
+No Vite, React, Next.js, backend, database, authentication, ad scripts, or heavy client-side libraries are included. The root-level HTML files and assets can be served directly by GitHub Pages.
 
-## Getting started
+## GitHub Pages deployment
 
-Install dependencies:
+Deploy this repository from the branch root. The site is intentionally static, so GitHub Pages can serve the checked-in files directly without running a Node build.
+
+The repository keeps `skillmigrate.com` as the canonical production domain and includes a root-level `CNAME` file for GitHub Pages custom-domain publishing.
+
+## Updating styles
+
+The production stylesheet is checked in at `assets/css/styles.css`. If you change Tailwind classes or `src/input.css`, regenerate the stylesheet locally:
 
 ```bash
 npm install
-```
-
-Run the local development server:
-
-```bash
-npm run dev
-```
-
-Build the static site:
-
-```bash
 npm run build
 ```
 
-Preview the production build:
-
-```bash
-npm run preview
-```
+The build script only runs the Tailwind CLI and writes the static CSS file. It does not use Vite.
 
 ## Content direction
 
@@ -54,13 +44,17 @@ The site should avoid guarantees about PR, jobs, visas, scholarships, admission,
 
 ```text
 .
+├── CNAME
 ├── assets/
+│   ├── css/
+│   │   └── styles.css
 │   ├── icons/
 │   ├── images/
+│   ├── js/
+│   │   └── main.js
 │   └── logos/
 ├── src/
-│   ├── input.css
-│   └── main.js
+│   └── input.css
 ├── accounting-finance-courses-abroad.html
 ├── best-countries-to-study-abroad.html
 ├── best-courses-abroad.html
@@ -76,9 +70,8 @@ The site should avoid guarantees about PR, jobs, visas, scholarships, admission,
 ├── nursing-healthcare-courses-abroad.html
 ├── package.json
 ├── postcss.config.js
-├── public/
-│   ├── robots.txt
-│   └── sitemap.xml
+├── robots.txt
+├── sitemap.xml
 ├── student-visa-mistakes-to-avoid.html
 ├── study-abroad-to-pr.html
 ├── study-in-australia.html
@@ -90,8 +83,7 @@ The site should avoid guarantees about PR, jobs, visas, scholarships, admission,
 ├── tailwind.config.js
 ├── trades-vocational-courses-abroad.html
 ├── usa-vs-uk-vs-canada.html
-├── visa-basics.html
-└── vite.config.js
+└── visa-basics.html
 ```
 
 ## Disclaimer
