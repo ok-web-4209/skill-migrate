@@ -1,6 +1,6 @@
 # SkillMigrate
 
-SkillMigrate is a static website foundation for **Study Abroad With a Skilled Migration Plan**.
+SkillMigrate is a static, content-first website for **study abroad guides, course comparisons, visa pathway explainers, and country planning resources**.
 
 ## Tech stack
 
@@ -10,7 +10,7 @@ SkillMigrate is a static website foundation for **Study Abroad With a Skilled Mi
 - Vanilla JavaScript
 - Inter font
 
-No React, Next.js, backend, database, authentication, or heavy client-side libraries are included.
+No React, Next.js, backend, database, authentication, ad scripts, or heavy client-side libraries are included.
 
 ## Getting started
 
@@ -37,6 +37,18 @@ Preview the production build:
 ```bash
 npm run preview
 ```
+
+## Content direction
+
+The homepage is designed as an informational blog/content hub for students researching:
+
+- Country guides for the USA, UK, Canada, Australia, New Zealand, and Germany
+- Career-focused course categories
+- Student visa and post-study work basics
+- Possible skilled migration pathway research
+- Future blog categories and display-ad placements without loading ad scripts
+
+The site should avoid guarantees about PR, jobs, visas, scholarships, admission, or migration outcomes.
 
 ## Project structure
 
