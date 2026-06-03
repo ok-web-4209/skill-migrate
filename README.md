@@ -15,7 +15,7 @@ No Vite, React, Next.js, backend, database, authentication, ad scripts, or heavy
 
 Deploy this repository from the branch root. The site is intentionally static, so GitHub Pages can serve the checked-in files directly without running a Node build.
 
-The repository keeps `skillmigrate.com` as the canonical production domain and includes a root-level `CNAME` file for GitHub Pages custom-domain publishing.
+Custom-domain publishing is currently disabled: there is no root-level `CNAME` file, so GitHub Pages will serve the site from the default GitHub Pages URL for previewing.
 
 ## Updating styles
 
@@ -44,7 +44,6 @@ The site should avoid guarantees about PR, jobs, visas, scholarships, admission,
 
 ```text
 .
-├── CNAME
 ├── assets/
 │   ├── css/
 │   │   └── styles.css
@@ -71,7 +70,6 @@ The site should avoid guarantees about PR, jobs, visas, scholarships, admission,
 ├── package.json
 ├── postcss.config.js
 ├── robots.txt
-├── sitemap.xml
 ├── student-visa-mistakes-to-avoid.html
 ├── study-abroad-to-pr.html
 ├── study-in-australia.html
