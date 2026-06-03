@@ -48,4 +48,29 @@
   .section-subtitle {
     @apply mt-4 max-w-3xl text-base leading-8 text-brand-muted sm:text-lg;
   }
+
+  .article-card {
+    @apply rounded-3xl border border-brand-border bg-white p-6 shadow-soft sm:p-8 lg:p-10;
+  }
+
+  .article-section {
+    @apply border-b border-brand-border py-8 first:pt-0 last:border-b-0 last:pb-0;
+  }
+
+  .article-section h2 {
+    @apply text-2xl font-bold tracking-tight text-navy sm:text-3xl;
+  }
+
+  .article-section ul {
+    @apply mt-5 space-y-4 text-base leading-8 text-brand-muted;
+  }
+
+  .article-section li {
+    @apply relative pl-7;
+  }
+
+  .article-section li::before {
+    @apply absolute left-0 top-3 h-2 w-2 rounded-full bg-brand-teal content-[''];
+  }
+
 }
