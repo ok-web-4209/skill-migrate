@@ -56,10 +56,11 @@
     <script defer src="assets/js/main.js"></script>
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header class="sticky top-0 z-50 border-b border-brand-border/80 bg-white/90 backdrop-blur">
       <nav class="container-custom flex min-h-20 items-center justify-between" aria-label="Primary navigation">
         <a href="index.html" class="flex items-center gap-3" aria-label="SkillMigrate home">
-          <img class="h-11 w-11 rounded-2xl" src="assets/logos/skillmigrate-logo.svg" alt="" />
+          <img class="h-11 w-11 rounded-2xl" src="assets/logos/skillmigrate-logo.svg" width="44" height="44" alt="" />
           <span><span class="block text-lg font-extrabold tracking-tight text-navy">SkillMigrate</span><span class="block text-xs font-medium text-brand-muted">Study abroad guides</span></span>
         </a>
         <button type="button" class="inline-flex h-11 w-11 items-center justify-center rounded-2xl border border-brand-border text-navy lg:hidden" data-mobile-menu-toggle aria-controls="mobile-menu" aria-expanded="false">
@@ -89,7 +90,7 @@
       </div>
     </header>
 
-    <main>
+    <main id="main-content">
       <section class="bg-gradient-to-br from-white via-brand-light to-blue-50 py-16 sm:py-20">
         <div class="container-custom">
           <a class="text-sm font-bold text-brand-blue hover:text-blue-700" href="index.html">← Back to homepage</a>
@@ -108,7 +109,7 @@
               <p>This page is informational and does not promise admission, visas, jobs, scholarships, permanent residence, or migration outcomes.</p>
             </section>
 
-            <!-- Future ad placement: comparison page after intro -->
+            <!-- Reserved content break: comparison page after intro -->
 
             <section id="contents" class="guide-section">
               <h2>Table of contents</h2>
@@ -125,12 +126,12 @@
               <div class="cost-table-wrap" role="region" aria-label="Study abroad country comparison table" tabindex="0">
                 <table class="cost-table">
                   <thead>
-                    <tr><th>Country</th><th>Best For</th><th>Cost Level</th><th>Work While Studying</th><th>Post-Study Work</th><th>Migration Potential</th><th>Difficulty Level</th></tr>
+                    <tr><th>Country</th><th>Best For</th><th>Cost Level</th><th>Work While Studying</th><th>Post-Study Work</th><th>Pathway Context</th><th>Difficulty Level</th></tr>
                   </thead>
                   <tbody>
                     <tr><td><a class="font-bold text-brand-blue" href="study-in-usa.html">USA</a></td><td>STEM, research, business, technology, networking</td><td>High; varies by university and program</td><td>Often limited and rule-based</td><td>May be available through eligible practical training routes</td><td>Possible but competitive and employer-dependent</td><td>High</td></tr>
                     <tr><td><a class="font-bold text-brand-blue" href="study-in-uk.html">UK</a></td><td>Shorter degrees, healthcare, law, finance, business</td><td>Medium to high; varies by city and program</td><td>Usually limited during term under student visa rules</td><td>Graduate routes may be available if eligible</td><td>Possible through work pathways, but not guaranteed</td><td>Medium</td></tr>
-                    <tr><td><a class="font-bold text-brand-blue" href="study-in-canada.html">Canada</a></td><td>Public universities, co-op, practical programs, long-term planning</td><td>Medium to high; varies by province and program</td><td>May be allowed within official limits</td><td>May be available for eligible programs and institutions</td><td>Often considered strong, subject to changing criteria</td><td>Medium</td></tr>
+                    <tr><td><a class="font-bold text-brand-blue" href="study-in-canada.html">Canada</a></td><td>Public universities, co-op, practical programs, long-term planning</td><td>Medium to high; varies by province and program</td><td>May be allowed within official limits</td><td>May be available for eligible programs and institutions</td><td>Often researched, subject to changing criteria</td><td>Medium</td></tr>
                     <tr><td><a class="font-bold text-brand-blue" href="study-in-australia.html">Australia</a></td><td>Healthcare, engineering, IT, business, regional options</td><td>Medium to high; varies by city and program</td><td>May be allowed within official limits</td><td>May be available depending on qualification and rules</td><td>Possible, especially where skills align with current lists</td><td>Medium</td></tr>
                     <tr><td><a class="font-bold text-brand-blue" href="study-in-new-zealand.html">New Zealand</a></td><td>Smaller class sizes, healthcare, IT, hospitality, lifestyle</td><td>Medium; varies by institution and city</td><td>May be allowed within official limits</td><td>May be available for eligible qualifications</td><td>Possible but depends on skills, employment, and rules</td><td>Medium</td></tr>
                     <tr><td><a class="font-bold text-brand-blue" href="study-in-germany.html">Germany</a></td><td>Low-cost public study, engineering, technology, research</td><td>Low to medium; living costs and semester fees still matter</td><td>May be allowed within official limits</td><td>Job-search and work options may exist for eligible graduates</td><td>Possible with language, skills, and employment fit</td><td>Medium to high</td></tr>
@@ -143,7 +144,7 @@
               <h2>Best country by student profile</h2>
               <div class="info-grid three">
                 <div class="info-card"><h3>Best for STEM</h3><p>The USA, Germany, Canada, and Australia can be useful for STEM students, depending on research fit, practical training options, language comfort, and program quality.</p></div>
-                <div class="info-card"><h3>Best for PR planning</h3><p>Canada and Australia are commonly researched for long-term planning, while Germany and New Zealand may suit specific profiles. Always treat PR as possible, not guaranteed.</p></div>
+                <div class="info-card"><h3>Long-term pathway research</h3><p>Canada and Australia are commonly researched for long-term planning, while Germany and New Zealand may suit specific profiles. Always treat PR as possible, not guaranteed.</p></div>
                 <div class="info-card"><h3>Best for budget-conscious students</h3><p>Germany may help students seeking low-cost public education, but living costs, blocked funds, language preparation, and city choice still matter.</p></div>
                 <div class="info-card"><h3>Best for short degrees</h3><p>The UK can be useful for students who prefer shorter master's programs and globally recognized universities, depending on course fit and total cost.</p></div>
                 <div class="info-card"><h3>Best for healthcare</h3><p>The UK, Australia, Canada, and New Zealand may suit healthcare interests, but licensing, clinical placement, and registration requirements can be strict.</p></div>
@@ -153,7 +154,7 @@
               </div>
             </section>
 
-            <!-- Future ad placement: comparison page mid-content -->
+            <!-- Reserved content break: comparison page mid-content -->
 
             <section id="related-guides" class="guide-section">
               <h2>Related country guides</h2>
@@ -164,12 +165,12 @@
                 <a class="related-card" href="study-in-australia.html">Study in Australia</a>
                 <a class="related-card" href="study-in-new-zealand.html">Study in New Zealand</a>
                 <a class="related-card" href="study-in-germany.html">Study in Germany</a>
-                <a class="related-card" href="courses.html">Explore course guides</a>
-                <a class="related-card" href="visa-guides.html">Read visa guides</a>
+                <a class="related-card" href="courses.html">Explore Courses</a>
+                <a class="related-card" href="visa-guides.html">Read Visa Guides</a>
               </div>
             </section>
 
-            <!-- Future ad placement: before FAQ -->
+            <!-- Reserved content break: before FAQ -->
 
             <section id="faq" class="guide-section">
               <h2>FAQ</h2>
