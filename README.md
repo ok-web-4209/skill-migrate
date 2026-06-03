@@ -5,11 +5,11 @@ SkillMigrate is a static, content-first website for **study abroad guides, cours
 ## Tech stack
 
 - Static HTML
-- Precompiled Tailwind CSS
+- Plain CSS in `assets/css/styles.css`
 - Vanilla JavaScript
 - Inter font
 
-No Vite, React, Next.js, backend, database, authentication, ad scripts, or heavy client-side libraries are included. The root-level HTML files and assets can be served directly by GitHub Pages.
+No Vite, Tailwind build, React, Next.js, backend, database, authentication, ad scripts, or heavy client-side libraries are included. The root-level HTML files and assets can be served directly by static hosts such as GitHub Pages or Hostinger.
 
 ## GitHub Pages deployment
 
@@ -19,14 +19,7 @@ Custom-domain publishing is currently disabled: there is no root-level `CNAME` f
 
 ## Updating styles
 
-The production stylesheet is checked in at `assets/css/styles.css`. If you change Tailwind classes or `src/input.css`, regenerate the stylesheet locally:
-
-```bash
-npm install
-npm run build
-```
-
-The build script only runs the Tailwind CLI and writes the static CSS file. It does not use Vite.
+The production stylesheet is checked in at `assets/css/styles.css`. Edit this file directly when adding reusable styles. Do not run npm, Tailwind, Vite, React, Next.js, or any external build step for this static website.
 
 ## Content direction
 
@@ -52,8 +45,6 @@ The site should avoid guarantees about PR, jobs, visas, scholarships, admission,
 │   ├── js/
 │   │   └── main.js
 │   └── logos/
-├── src/
-│   └── input.css
 ├── accounting-finance-courses-abroad.html
 ├── best-countries-to-study-abroad.html
 ├── best-courses-abroad.html
@@ -67,8 +58,6 @@ The site should avoid guarantees about PR, jobs, visas, scholarships, admission,
 ├── index.html
 ├── it-computer-science-courses-abroad.html
 ├── nursing-healthcare-courses-abroad.html
-├── package.json
-├── postcss.config.js
 ├── robots.txt
 ├── student-visa-mistakes-to-avoid.html
 ├── study-abroad-to-pr.html
@@ -78,7 +67,6 @@ The site should avoid guarantees about PR, jobs, visas, scholarships, admission,
 ├── study-in-new-zealand.html
 ├── study-in-uk.html
 ├── study-in-usa.html
-├── tailwind.config.js
 ├── trades-vocational-courses-abroad.html
 ├── usa-vs-uk-vs-canada.html
 └── visa-basics.html
