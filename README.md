@@ -1,73 +1,66 @@
 # SkillMigrate
 
-SkillMigrate is a static, content-first website for **study abroad guides, course comparisons, visa pathway explainers, and country planning resources**.
+SkillMigrate is a pure static, content-first website for **study abroad guides, course comparisons, visa pathway explainers, and country planning resources**.
 
 ## Tech stack
 
-- Vite
-- HTML
-- Tailwind CSS
+- Plain HTML
+- Plain CSS
 - Vanilla JavaScript
-- Inter font
+- Static assets only
 
-No React, Next.js, backend, database, authentication, ad scripts, or heavy client-side libraries are included.
+There is no Vite, Tailwind build, package install, npm build step, React, backend, database, authentication, or external build tooling required.
 
-## Getting started
+## Preview locally
 
-Install dependencies:
-
-```bash
-npm install
-```
-
-Run the local development server:
+Open `index.html` directly in a browser, or serve the folder with any static file server. For example, if Python is available:
 
 ```bash
-npm run dev
+python3 -m http.server 4173
 ```
 
-Build the static site:
-
-```bash
-npm run build
-```
-
-Preview the production build:
-
-```bash
-npm run preview
-```
-
-## Content direction
-
-The homepage is designed as an informational blog/content hub for students researching:
-
-- Country guides for the USA, UK, Canada, Australia, New Zealand, and Germany
-- Career-focused course categories
-- Student visa and post-study work basics
-- Possible skilled migration pathway research
-- Future blog categories and display-ad placements without loading ad scripts
-
-The site should avoid guarantees about PR, jobs, visas, scholarships, admission, or migration outcomes.
+Then visit `http://localhost:4173/`.
 
 ## Project structure
 
 ```text
 .
-├── assets/
-│   ├── icons/
-│   ├── images/
-│   └── logos/
-├── src/
-│   ├── input.css
-│   └── main.js
 ├── index.html
-├── package.json
-├── postcss.config.js
-├── tailwind.config.js
-└── vite.config.js
+├── study-in-usa.html
+├── study-in-uk.html
+├── study-in-canada.html
+├── study-in-australia.html
+├── study-in-new-zealand.html
+├── study-in-germany.html
+├── courses.html
+├── visa-guides.html
+├── compare.html
+├── free-consultation.html
+├── contact.html
+├── 404.html
+├── sitemap.xml
+├── robots.txt
+└── assets/
+    ├── css/
+    │   └── styles.css
+    ├── js/
+    │   └── main.js
+    ├── images/
+    └── logos/
 ```
+
+## Content direction
+
+The site is an informational blog/content hub for students researching:
+
+- Country guides for the USA, UK, Canada, Australia, New Zealand, and Germany
+- Career-focused course categories
+- Student visa and post-study work basics
+- Possible skilled migration pathway research
+- Country comparisons and planning checklists
+
+The site avoids guarantees about permanent residence, jobs, visas, scholarships, admission, or migration outcomes.
 
 ## Disclaimer
 
-SkillMigrate provides general educational information and does not provide legal, immigration, or visa advice. Visa and immigration rules change frequently. Always verify details with official government sources or licensed professionals.
+SkillMigrate provides general educational information and does not provide legal, immigration, visa, admission, scholarship, employment, financial, or migration advice. Visa and immigration rules change frequently. Always verify details with official government sources or licensed professionals.
